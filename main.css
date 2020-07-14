@@ -12,18 +12,23 @@
 	{
 		margin: 0px;
 		padding: 0px;
-		background: #181818;
+		background: #1d2021;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 12pt;
 		font-weight: 200;
-		color: #FFF;
+		color: #ebdbb2;
 	}
-	
 	
 	h1, h2, h3
 	{
 		margin: 0;
 		padding: 0;
+	}
+
+	h3 
+	{
+		text-align: center;
+		font-size: 3.5em;
 	}
 	
 	p, ol, ul
@@ -37,21 +42,21 @@
 		list-style: none;
 	}
 	
-	p
+
+	a 
 	{
-		line-height: 180%;
+		color: #fbf1c7;
 	}
-	
-	strong
+
+		
+	ul.actions li
 	{
+		color: #fbf1c7;
+		display: inline-block;
+		padding: 0em 0.50em;
 	}
-	
-	a
-	{
-		color: #ee0000;
-	}
-	
-	
+
+
 	.container
 	{
 		overflow: hidden;
@@ -63,15 +68,12 @@
 /* Image Style                                                                   */
 /*********************************************************************************/
 
-	.image
-	{
-		display: inline-block;
-	}
 	
-	.image img
+	img
 	{
-		display: block;
-		width: 100%;
+		margin: 10%;
+		width: 50%;
+		height: 50%;
 	}
 	
 	.image-full
@@ -99,28 +101,7 @@
 		width: auto;
 	}
 
-/*********************************************************************************/
-/* List Styles                                                                   */
-/*********************************************************************************/
 
-	ul.style1
-	{
-	}
-	
-	ul.actions
-	{
-	}
-	
-	ul.actions li
-	{
-		display: inline-block;
-		padding: 0em 0.50em;
-	}
-
-
-/*********************************************************************************/
-/* Button Style                                                                  */
-/*********************************************************************************/
 
 	.button
 	{
@@ -129,12 +110,12 @@
 		letter-spacing: 0.10em;
 		margin-top: 2em;
 		padding: 1.40em 3em;
-		background: #660505;
+		background: #cc241d;
 		border-radius: 6px;
 		text-decoration: none;
 		font-weight: 700;
 		font-size: 1em;
-		color: #FFF;
+		color: #fbf1c7;
 	}
 
 	.button-nav{
@@ -146,18 +127,14 @@
 		text-decoration: none;
 		font-weight: 700;
 		font-size: 1em;
-		color: #FFF;
+		color: #fbf1c7;
 	}
 	.button-nav:hover {
-		background: #660505;
+		background: #fb4934;
+		color: #1d2021;
 	}
 	
-	.button-alt
-	{
-		padding: 1em 2em;
-		border-color: rgba(0,0,0,.8);
-		color: #FFF;
-	}		
+		
 /*********************************************************************************/
 /* 4-column                                                                      */
 /*********************************************************************************/
@@ -243,20 +220,87 @@
 	
 	.title .byline
 	{
+		padding-top: 2em;
 		font-size: 1.3em;
-		color: rgba(255,255,255,0.60);
+		color: #a89984;
 	}
 
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
 
-	#wrapper
+
+	#about
 	{
 		position: relative;
-		padding: 5em 0em 7em 0em;
-		background: #FFF;
+		padding: 5em 0em 5em 0em;
+		background: #282828;
 	}
+
+	#about .list 
+	{
+		padding-left: 5em;
+		font-size: 1.2em;
+	}
+
+	#hobbies
+	{
+		position: relative;
+		padding: 5em 0em 5em 0em;
+		margin: 5em auto 5em auto;
+		background: #32302f;
+	}
+
+	#hobbies .list 
+	{
+		padding: 15%;
+		padding-top: 0%;
+		padding-left: 20%;
+		font-size: 1.2em;
+	}
+
+	#hobbies .sublist 
+	{
+		padding: 15%;
+		padding-top: 0%;
+		padding-left: 25%;
+		font-size: 0.8em;
+	}
+	#hobbies #child p 
+	{
+		padding-left: 5em;
+		font-size: 1.5em;
+	}
+
+	#contact
+	{
+		position: relative;
+		padding: 5em 0em 5em 0em;
+		margin: 5em auto auto auto;
+		background: #1d2021;
+	}
+
+	#contact .list 
+	{
+		padding: 15%;
+		padding-top: 0%;
+		padding-left: 20%;
+		font-size: 2em;
+		line-height: 2;
+	}
+
+	#child 
+	{
+		overflow: hidden;;
+		width: 50%;
+		float: left;
+		line-height: 2;
+	}
+
+	#child p {
+		padding: 15%;
+		padding-top: 10%;
+		padding-left: 20%;
+		font-size: 1.2em;
+	}
+
 
 	#wrapper2
 	{
@@ -265,15 +309,6 @@
 		background: rgba(255,255,255,0.60);
 	}
 
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
-
-	#header-wrapper
-	{
-		
-		
-	}
 
 	#header
 	{
@@ -285,54 +320,6 @@
 		float: right;
 	}
 
-/*********************************************************************************/
-/* Menu                                                                          */
-/*********************************************************************************/
-
-	#menu
-	{
-		position: absolute;
-		top: 4.5em;
-		right: 0;
-	}
-	
-	#menu ul
-	{
-		display: inline-block;
-	}
-	
-	#menu li
-	{
-		display: block;
-		float: left;
-		text-align: center;
-	}
-	
-	#menu li a, #menu li span
-	{
-		padding: 1em 1.5em;
-		letter-spacing: 1px;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-size: 0.8em;
-		color: rgba(255,255,255,0.80);
-	}
-	
-	
-	#menu .active a
-	{
-		background: #2651a8;
-		border-radius: 6px;
-		color: rgba(255,255,255,1);
-	}
-	
-	#menu .icon
-	{
-	}
-
-/*********************************************************************************/
-/* Banner                                                                        */
-/*********************************************************************************/
 
 	#banner
 	{
@@ -353,25 +340,19 @@
 	#banner .title .byline
 	{
 		font-size: 2em;
+		padding-top: 2em;
+		color: #a89984;
 	}
 	
 	#banner .button
 	{
 		margin-top: 2em;
 		padding: 1.40em 3em;
-		border-radius: 6px;
 		font-weight: 700;
 		font-size: 1em;
 		
 	}
 	
-	.banner
-	{
-	}
-
-/*********************************************************************************/
-/* Copyright                                                                     */
-/*********************************************************************************/
 
 	#copyright
 	{
@@ -392,41 +373,4 @@
 		text-decoration: none;
 		color: rgba(255,255,255,0.6);
 	}
-
-/*********************************************************************************/
-/* Extra                                                                         */
-/*********************************************************************************/
-
-	#three-column
-	{
-		text-align: center;
-		color: rgba(0,0,0,0.6);
-	}
-
-	#three-column .fa
-	{
-		display: block;
-		padding: 1em 0em;
-		color: rgba(0,0,0,1);
-		font-size: 2em;
-	}
-	
-	#three-column .title h2
-	{
-		font-weight: bold;
-		color: rgba(0,0,0,0.8);
-	}
-
-	#three-column .title .byline
-	{
-		text-align: center;
-		color: rgba(0,0,0,.5);
-	}
-
-
-
-
-/*********************************************************************************/
-/* Tables                                                                     */
-/*********************************************************************************/
 
